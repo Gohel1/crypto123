@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Document</title>
+<style>
+#preloader{
+    position: fixed;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+background: black url(preloader.gif) no-repeat center center;
+background-size: 3%;
+
+}
+.bull{
+    margin-left: 42%;
+  margin-top: 7%;
+    width: 200px;
+    height: 200px;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background:linear-gradient(100deg,#210b31,#190c2c,#001451,#001f71)
+}
+.nav img{
+    
+    background: black;
+    margin-left: 25px;
+    width: 140px;
+    height: 75px;
+}
+.nav i{
+    color: rgb(170, 170, 170);
+    font-size: 25px;
+    margin-top: 31px;
+    position: absolute;
+    margin-left: 375px;
+}
+
+.nav input{
+    background: #2a2e39;
+    height: 40px;
+    width: 170px;
+    border: none;
+    font-size: 19px;
+    font-weight: 600;
+    color: aliceblue;
+    border-radius: 25px;
+    padding-left: 50px;
+    margin-left: 195px;
+    margin-top: 22px;
+}
+.nav input::placeholder{
+    color: rgb(170, 170, 170);
+    font-size: 17px;
+    font-weight: 600;
+}
+.nav ul{
+display: flex;
+gap: 30px;
+margin-top: 23px;
+}
+.nav ul li{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 8px 8px 8px;
+    list-style: none;
+    color: rgb(170, 170, 170);
+}
+.nav ul li:hover{
+    color: aliceblue;
+   background:linear-gradient(100deg,#b50013,#00b74d);
+   border-radius: 25px;
+}
+.content{
+    background-image:url(img-4328.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+
+</style>
+</head>
+<body>
+    <div id="preloader">
+<img class="bull" src="preloadimg.jpg" alt="">
+    </div>
+<div class="nav">
+<img src="bulllogo.jpg" alt="">
+
+<input type="text" placeholder="Search Token">
+<i class='bx bx-search-alt-2'></i>
+
+<ul>
+    <li>Homepage</li>
+    <li>Market</li>
+    <li>Dailynews</li>
+    <li>TrackCoin</li>
+    <li>About</li>
+</ul>
+</div>
+<div class="content">
+
+</div>
+
+    <script>
+
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){
+        loader.style.display = "none";
+        })
+        
+
+        </script>
+</body>
+
+
+</html>
